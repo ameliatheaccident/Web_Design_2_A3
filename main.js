@@ -21,16 +21,6 @@ let toggleSearch = () => {
 
 toggleSearch();
 
-// Scroll Animation
-gsap.resgisterPlugin(ScrollTrigger);
-
-
-gsap.to(".cody-information", {
-  y: 10,
-  duration: 3,
-  scrollTrigger: ".cosy-information"
-});
-
 // Swiper Image Carousels
 
 var swiper1 = new Swiper(".mySwiper1", {
@@ -76,5 +66,14 @@ const observer = new IntersectionObserver(entries => {
   
 observer.observe(box);
 
+// Scroll Animationg 
+
+// sap.resgisterPlugin(ScrollTrigger);
+
+// gsap.to(".cody-information", {
+  // y: 10,
+  // duration: 3,
+  // scrollTrigger: ".cosy-information"
+// });
 
 
