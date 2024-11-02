@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/themes/light.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <title>WWE Information, Storys, Events & More | WWE</title>
+  <audio id="wwe-audio" src="/audio/WWE_Bell_Sound_Effect.mp3" autoplay="autoplay"></audio>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-bar">
+      <a class="logo" href="homepage.html">
+        <img class="nav-logo" src="images/WWE Logo.png" alt="Graphic of two white W letters layered on top of each other with a red stripe moving from left to right">
+      </a>
+      <li>
+        <a class="page-link" href="homepage.html">
+          HISTORY
+        </a>
+        <a class="page-link" href="superstars.html">
+          SUPERSTARS
+        </a>
+        <a class="page-link" href="homepage.html">
+          STORYLINES
+        </a>
+        <a class="page-link" href="homepage.html">
+          EVENTS
+        </a>
+        <a class="page-link" href="homepage.html">
+          IN THE RING
+        </a>
+        <a class="page-link" href="homepage.html">
+          FAQ
+        </a>
+      </li>
+
+      <div class="search-bar">
+        <input class="search-input" type="search" placeholder="Search...">
+        <div class="nav-icon">
+          <div class="search-start">
+            <div class="search-icon" style="color: #ffffff; font-size: 1.875rem;">
+              <sl-icon-button name="search" label="Search"></sl-icon-button>
+            </div>
+          </div>
+          <div class="search-close">
+            <div class="search-icon" style="color: #ffffff; font-size: 1.875rem;">
+              <sl-icon-button name="search" label="Search"></sl-icon-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Homepage -->
+  <div class="hero-container">
+    <img class="hero-image" src="/images/WWE_hero_image.png" alt="Full arena of people watching a live WWE show, the Royal Rumble with a ring in the middle and a screen above it with a person on it pointing">
+    <sl-animation name="slideInRight" easing="ease" duration="1500" iterations="1" play>
+      <h1>Welcome to the WWE Universe</h1>
+    </sl-animation>
+    <sl-animation name="fadeIn" easing="ease" duration="2500" iterations="1" play>
+      <button class="learn-more" type="button" onclick = "window.location.href='history.html'">
+        Learn More
+        <sl-icon name="arrow-right"></sl-icon>
+      </button>
+    </sl-animation>  
+  </div>
+
+  <h2 class="subheading">WHAT IS THE WWE</h2>
+
+  <div class="swiper mySwiper1">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <img class="red-line" src="/images/red line.png" alt="Red wavelength line going horizontally across the screen">
+        <sl-animation name="zoomIn" easing="ease-in-out" duration="900" iterations="1" play>
+          <img class="timeline-image1" src="/images/80's boom copy.png" alt="Shirtless wrestler from the 1980s, Tito">
+        </sl-animation>
+        <div class="carousel-info1">
+          <sl-animation name="slideInRight" easing="ease" duration="1500" iterations="1" play>
+            <h4 class="history-carousel-title">Golden Era</h4>
+          </sl-animation>
+          <sl-divider style="color: #ffffff; margin: 0.25rem 0 1rem 0;"></sl-divider>
+          <sl-animation name="slideInLeft" easing="ease" duration="1500" iterations="1" play>
+            <h5 class="history-carousel-text">The Golden Era of the World Wrestling Federation (WWF) started when Vince McMahon Jr bought the company from his father and turned it into the worldwide hit it is now. This era went form 1980 to 1993 and saw the WWF come to TV all across the United Sates and outgrow all of its competitors at the time. During this era, famous wrestlers such as Hulk Hogan, Andre the Giant and Randy Savage were signed and big events such as Wrestlemania and the Royal Rumble were created.</h5>
+          </sl-animation>
+        </div>
+        <sl-animation name="zoomIn" easing="ease-in-out" duration="900" iterations="1" play>
+          <img class="bret-hart" src="/images/bret_hart copy.png" alt="Bret Hart wearing his signature pink wrestling gear holding a championship belt over his shoulder">
+        </sl-animation>
+        <div class="carousel-info2">
+          <sl-animation name="slideInLeft" easing="ease" duration="1500" iterations="1" play>
+            <h4 class="history-carousel-title">NEW GENERATION ERA</h4>
+          </sl-animation>
+          <sl-divider style="color: #ffffff; margin: 0.25rem 0 1rem 0;"></sl-divider>
+          <sl-animation name="slideInRight" easing="ease" duration="1500" iterations="1" play>
+            <h5 class="history-carousel-text">The New Generation Era spans from 1993 to 1997 and started beacuse of reports that some WWF wrestlers were using steroids. This caused Vince McMahon to bring in new talent with now big names such as Bret Hart, The Undertaker and Yokozuna among many. WWF also created their first weekly TV show with RAW and the formation of a famous wrestling stable known as the nWo. This success was short-lived as a newer wrestling promotion called the WCW had signed Hulk Hogan and many other WWF wrestlers followed suit. </h5>
+          </sl-animation>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <img class="red-line" src="/images/red line.png" alt="Red wavelength line going horizontally across the screen">
+        <sl-animation name="zoomIn" easing="ease-in-out" duration="900" iterations="1" play>
+          <img class="attitude-era" src="/images/attitude_era copy.png" alt="The Rock and Steve Austin in the middle of a wrestling match ">
+        </sl-animation>
+        <div class="carousel-info1">
+          <sl-animation name="slideInRight" easing="ease" duration="1500" iterations="1" play>
+            <h4 class="history-carousel-title">ATTITUDE ERA</h4>
+          </sl-animation>
+          <sl-divider style="color: #ffffff; margin: 0.25rem 0 1rem 0;"></sl-divider>
+          <sl-animation name="slideInLeft" easing="ease" duration="1500" iterations="1" play>
+            <h5 class="history-carousel-text">The Attitude Era was started when Vince McMahon wanted to match the success of WCW by creating better and more realistic storylines and characters. This spanned from 1997 to 2002 and featured two of the most famous wrestlers of all time, The Rock and Stone Cold Steve Austin. It was around this time that Triple H was introduced to the scene. The WWF's popularity continued to skyrocket and another TV promotion was created know as Smackdown. It was here where storylines gained a boost in popularity with the Invasion storyline being the most famous.</h5>
+          </sl-animation>
+        </div>
+        <sl-animation name="zoomIn" easing="ease-in-out" duration="900" iterations="1" play>
+          <img class="batista" src="/images/babatista copy.png" alt="picture of a shirtless wrestler from the 1980s">
+        </sl-animation>
+        <div class="carousel-info2">
+          <sl-animation name="slideInLeft" easing="ease" duration="1500" iterations="1" play>
+            <h4 class="history-carousel-title">RUTHLESS AGRESSION ERA</h4>
+          </sl-animation>
+          <sl-divider style="color: #ffffff; margin: 0.25rem 0 1rem 0;"></sl-divider>
+          <sl-animation name="slideInRight" easing="ease" duration="1500" iterations="1" play>
+            <h5 class="history-carousel-text">In 2002 the WWF was forced to rebrand itself as World Wrestling Entertainment (WWE) after a lawsuit with the World Wildlife Fund and with this rebrand came the start of the Ruthless Agression Era. This era lasted until 2008 and saw a step back from the political side of things and focused more on the wrestling. More major wrestling stars joined during this era such as John Cena, Randy Orton, Batista and Rey Mysterio to name a few. Female wrestling stars also had a surgence during this era when the brand departed from the WWF and attitude era.</h5>
+          </sl-animation>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <img class="red-line" src="/images/red line.png" alt="Red wavelength line going horizontally across the screen">
+        <sl-animation name="zoomIn" easing="ease-in-out" duration="900" iterations="1" play>
+          <img class="timeline-image1" src="/images/john cena copy.png" alt="picture of a shirtless wrestler from the 1980s">
+        </sl-animation>
+        <div class="carousel-info1">
+          <sl-animation name="slideInRight" easing="ease" duration="1500" iterations="1" play>
+            <h4 class="history-carousel-title">PG ERA</h4>
+          </sl-animation>
+          <sl-divider style="color: #ffffff; margin: 0.25rem 0 1rem 0;"></sl-divider>
+          <sl-animation name="slideInLeft" easing="ease" duration="1500" iterations="1" play>
+            <h5 class="history-carousel-text">The PG Era was a big step for the company as it decided to be more conservative with its approach to wrestling and made it family-friendly to attract younger audiences. This era lasted from 2008 until 2016 and saw John Cena in his prime as the new face of the WWE and CM Punk as one of the most popular stars. NXT was launched during this era as a reality show which then morphed into the developmental program it is now. The womens division also expanded further during this era, with the Divas Championship introduced to main WWE TV. This was critcised though as the women weren't booked well enough when compared to the men.</h5>
+          </sl-animation>
+        </div>
+        <sl-animation name="zoomIn" easing="ease-in-out" duration="900" iterations="1" play>
+          <img class="bret-hart" src="/images/Becky-Lynch-1 copy.png" alt="picture of a shirtless wrestler from the 1980s">
+        </sl-animation>
+        <div class="carousel-info2">
+          <sl-animation name="slideInLeft" easing="ease" duration="1500" iterations="1" play>
+            <h4 class="history-carousel-title">NEW ERA</h4>
+          </sl-animation>
+          <sl-divider style="color: #ffffff; margin: 0.25rem 0 1rem 0;"></sl-divider>
+          <sl-animation name="slideInRight" easing="ease" duration="1500" iterations="1" play>
+            <h5 class="history-carousel-text">The New Era started in 2016 and saw the division of the WWE roster between RAW and Smackdown with each getting world chmpionships for the male wrestlers. This was paired with the rise of current big name wrestlers such as Roman Reigns, Seth Rollins, Braun Strowman and Drew McIntyre. The womens division also went through big changes with what's known as the women's evolution. This saw the WWE involve more women in the main roster like Becky Lynch, Charlotte Flair and Sasha Banks and introduce the RAW and Smackdown's womens championships. Becky Lynch become one of the biggest stars in the company by main eventing Wrestlemania and Kofi Kingston became the first African born champion.</h5>
+          </sl-animation>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="swiper-slide">
+        <img class="red-line" src="/images/red line.png" alt="Red wavelength line going horizontally across the screen">
+        <sl-animation name="zoomIn" easing="ease-in-out" duration="900" iterations="1" play>
+          <img class="timeline-image1" src="/images/triple-h copy.png" alt="picture of a shirtless wrestler from the 1980s">
+        </sl-animation>
+        <div class="carousel-info1">
+          <sl-animation name="slideInRight" easing="ease" duration="1500" iterations="1" play>
+            <h4 class="history-carousel-title">TRIPLE H</h4>
+          </sl-animation>
+          <sl-divider style="color: #ffffff; margin: 0.25rem 0 1rem 0;"></sl-divider>
+          <sl-animation name="slideInLeft" easing="ease" duration="1500" iterations="1" play>
+            <h5 class="history-carousel-text">Paul 'Triple H' Levesque is a former WWE wrestler, turned CCO of the WWE. He started wrestling during the Attitude Era as Hunter Hearst Helmsley and was a part of the popular D-Genration X and quickly become a top star in the business. He has main evented many WWE events and won multiple championships. He helped spear-head the NXT promotion and caused its rise in popularity and was later promoted to Chief Content Officer of the WWE after his retirement in 2021. He has helped with the writing in WWE prior to Vince McMahon stepping down from chairman, but is now leading the creative decisions for the WWE matches and storylines and has caused the WWE to rise in popularity again.</h5>
+          </sl-animation>
+        </div>
+        <sl-animation name="zoomIn" easing="ease-in-out" duration="900" iterations="1" play>
+          <img class="bret-hart" src="/images/roman copy.png" alt="picture of a shirtless wrestler from the 1980s">
+        </sl-animation>
+        <div class="carousel-info2">
+          <sl-animation name="slideInLeft" easing="ease" duration="1500" iterations="1" play>
+            <h4 class="history-carousel-title">TRIPLE H ERA</h4>
+          </sl-animation>
+          <sl-divider style="color: #ffffff; margin: 0.25rem 0 1rem 0;"></sl-divider>
+          <sl-animation name="slideInRight" easing="ease" duration="1500" iterations="1" play>
+            <h5 class="history-carousel-text">Also known as the Renaissance Era, this Era followed the brief lull caused by Covid and has had the company shoot into the limelight again after Triple H became the CCO. During this time Roman Reigns became the face of the company with his ever popular storyline, The Bloodline. In the women's division Bianca Belair and Rhea Ripley become some of the largest womens wrestlers to date. WWE has also expanded to have multiple premium live events held in other countries every year with Saudi Arabia being the main one because of a deal made by Vinve McMahon before he left the company.</h5>
+          </sl-animation>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+   <h2 class="subheading">POPULAR SUPERSTARS</h2>
+
+
+  <div class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide second">
+        <div class="image-size">
+          <img class="single-image" src="/images/Cody rhodes.jpeg" alt="Wrestler Cody Rhodes Screaming with his hands up in fists">
+        </div>
+        <h4 class="superstar-head">CODY RHODES</h4>
+        <h5 class="superstar-text">Current holder of the Undisputed WWE Championship</h5>
+      </div>
+      <div class="swiper-slide second">
+        <div class="image-size">
+          <img class="single-image" src="/images/gunther.png" alt="Wrestler Gunther">
+        </div>
+          <h4 class="superstar-head">GUNTHER</h4>
+        <h5 class="superstar-text">Current holder of the World Heavyweight Championship</h5>
+      </div>
+      <div class="swiper-slide second">
+        <div class="image-size">
+          <img class="single-image" src="/images/nia.jpg" alt="Wrestler Nia Jax">
+        </div>
+        <h4 class="superstar-head">NIA JAX</h4>
+        <h5 class="superstar-text">Current holder of the WWE Women's Championship</h5>
+      </div>
+      <div class="swiper-slide second">
+        <div class="image-size">
+          <img class="single-image" src="/images/liv.jpeg" alt="Wrestler Liv Morgan">
+        </div>
+        <h4 class="superstar-head">LIV MORGAN</h4>
+        <h5 class="superstar-text">Current holder of the Women's World Championship</h5>
+      </div>
+      <div class="swiper-slide second">
+        <div class="image-size">
+          <img class="single-image" src="/images/roman.jpg" alt="Wrestler Roman Reigns">
+        </div>
+        <h4 class="superstar-head">ROMAN REIGNS</h4>
+        <h5 class="superstar-text">Former Undisputed WWE Champion and the OTC</h5>
+      </div>
+      <div class="swiper-slide second">
+        <div class="image-size">
+          <img class="single-image" src="/images/jey.png" alt="Wrestler Jey Uso">
+        </div>
+        <h4 class="superstar-head">JEY USO</h4>
+        <h5 class="superstar-text">Former Intercontinental Champion</h5>
+      </div>
+      <div class="swiper-slide second">
+        <div class="image-size">
+          <img class="single-image" src="/images/rhea.jpg" alt="Wrestler Rhea Ripley">
+        </div>
+        <h4 class="superstar-head">RHEA RIPLEY</h4>
+        <h5 class="superstar-text">Former Womens World Champion</h5>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <h2 class="subheading">POPULAR STORYLINES</h2>
+
+  <div class="storylines">
+    <div class="storyline-column1">
+      <img class="bloodline" src="/images/bloodline.png">
+      <sl-animation name="slideInLeft" easing="ease" duration="1500" iterations="1" play>
+        <h4 class="storyline-head story1">THE BLOODLINE</h4>
+      </sl-animation> 
+      <button class="learn-more1" type="button" onclick = "window.location.href='homepage.html'">
+        Learn More
+        <sl-icon name="arrow-right"></sl-icon>
+      </button>
+      <img class="seth-v-bronson" src="/images/bronson.png">
+      <sl-animation name="slideInLeft" easing="ease" duration="1500" iterations="1" play>
+        <h4 class="storyline-head story2">SETH ROLLINS VS BRONSON REED</h4>
+      </sl-animation>  
+      <button class="learn-more2" type="button" onclick = "window.location.href='homepage.html'">
+        Learn More
+        <sl-icon name="arrow-right"></sl-icon>
+      </button>
+    </div>
+    <div class="storyline-column2">
+      <img class="laknight" src="/images/la v carmelo v andrade.png">
+      <sl-animation name="slideInRight" easing="ease" duration="1500" iterations="1" play>
+        <h4 class="storyline-head story3">LA KNIGHT VS CARMELO VS ANDRADE</h4>
+      </sl-animation>  
+      <button class="learn-more3" type="button" onclick = "window.location.href='homepage.html'">
+        Learn More
+        <sl-icon name="arrow-right"></sl-icon>
+      </button>
+      <img class="nia-tiffany" src="/images/nia nad tiff.png">
+      <sl-animation name="slideInRight" easing="ease" duration="1500" iterations="1" play>
+        <h4 class="storyline-head story4">NIA JAX AND TIFFANY STRATTON</h4>
+      </sl-animation>  
+      <button class="learn-more4" type="button" onclick = "window.location.href='homepage.html'">
+        Learn More
+        <sl-icon name="arrow-right"></sl-icon>
+      </button>
+    </div>
+  </div>
+
+  <h2 class="subheading">LIVE EVENTS</h2>
+
+  <div class="image-animation">
+    <sl-animation name="zoomIn" easing="ease-in-out" duration="900" iterations="1" play>
+      <img class="live-event-img" src="/images/crown-jewel2.jpeg" alt="Wrestler Cody Rhodes Screaming with his hands up in fists">
+    </sl-animation>
+    <div class="text-button">
+      <h5 class="live-event-text">For more information on our live events, click below</h5>
+      <button class="learn-more5" type="button" onclick = "window.location.href='homepage.html'">
+        Learn More
+        <sl-icon name="arrow-right"></sl-icon>
+      </button>
+  </div>
+  </div>
+  
+<!-- Footer -->
+  <div class="footer-container">
+    <div class="footer">
+      <div class="footer-column column1">
+        <a class="logo" href="homepage.html">
+          <img class="footer-logo" src="images/WWE Logo.png" alt="Graphic of two white W letters layered on top of each other with a red stripe moving from left to right">
+        </a>
+        <div class="social-media-icons">
+          <div class="media-icon" style="color: #ffffff; font-size: 1.875rem;">
+            <sl-icon-button name="facebook"></sl-icon-button>
+          </div>
+          <div class="media-icon" style="color: #ffffff; font-size: 1.875rem;">
+            <sl-icon-button name="instagram"></sl-icon-button>
+          </div>
+          <div class="media-icon" style="color: #ffffff; font-size: 1.875rem;">
+            <sl-icon-button name="twitter-x"></sl-icon-button>
+          </div>
+          <div class="media-icon" style="color: #ffffff; font-size: 1.875rem;">
+            <sl-icon-button name="youtube"></sl-icon-button>
+          </div>
+        </div>
+        <h3 class="footer-text">© World Wrestling Entertainment 1963 - 2024</h3>
+      </div>
+      <div class="footer-column column2">
+        <h3 class="footer-heading">ABOUT US</h3>
+        <a class="footer-link" href="homepage.html">
+          WWE History
+        </a>
+        <a class="footer-link" href="superstars.html">
+          WWE Superstars
+        </a>
+        <a class="footer-link" href="homepage.html">
+          WWE Storylines 
+        </a>
+        <a class="footer-link" href="homepage.html">
+          WWE Events
+        </a>
+        <a class="footer-link" href="homepage.html">
+          WWE Championships
+        </a>
+      </div>
+      <div class="footer-column column3">
+        <h3 class="footer-heading">HELP</h3>
+        <a class="footer-link" href="homepage.html">
+          FAQ
+        </a>
+        <a class="footer-link" href="">
+          Help Center
+        </a>
+        <a class="footer-link" href="">
+          Terms of Use
+        </a>
+        <a class="footer-link" href="">
+          Cookie Policy
+        </a>
+        <a class="footer-link" href="">
+          Accessibility
+        </a>
+      </div>
+      <div class="footer-column column4">
+        <h3 class="footer-heading">OUR SITES</h3>
+        <a class="footer-link" href="https://www.wwe.com/">
+          WWE.com
+        </a>
+        <a class="footer-link" href="https://network.wwe.com/home">
+          WWE Network
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.17.1/cdn/shoelace-autoloader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

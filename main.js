@@ -22,8 +22,14 @@ let toggleSearch = () => {
 toggleSearch();
 
 // Scroll Animation
+gsap.resgisterPlugin(ScrollTrigger);
 
 
+gsap.to(".cody-information", {
+  y: 10,
+  duration: 3,
+  scrollTrigger: ".cosy-information"
+});
 
 // Swiper Image Carousels
 
